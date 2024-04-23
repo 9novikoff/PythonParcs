@@ -1,6 +1,4 @@
-FROM debian:stretch-slim
-
-RUN echo "deb http://security.debian.org/debian-security bullseye-security main contrib non-free" > /etc/apt/sources.list
+FROM ubuntu:20.04
 
 RUN apt-get update
 RUN apt-get install -y python3-pip
