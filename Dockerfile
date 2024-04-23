@@ -5,7 +5,7 @@ RUN apt-get -y install python-pip python-dev
 
 WORKDIR /parcs
 
-COPY ./parcs
+COPY . /parcs
 
 RUN pip install -r requirements.txt
 
