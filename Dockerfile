@@ -1,9 +1,9 @@
-FROM debian:stretch-slim
+FROM python:3
 
 RUN echo "deb http://security.debian.org/debian-security bullseye-security main contrib non-free" > /etc/apt/sources.list
 
 RUN apt-get update
-RUN apt-get -y install python3
+RUN apt-get -y install python3-pip python-dev
 
 WORKDIR /parcs
 
